@@ -28,7 +28,7 @@
 	 * Although scripts in the WordPress core, Plugins and Themes may be
 	 * practising this, we should strive to set a better example in our own work.
 	 */
-	fetch('https://jsonplaceholder.typicode.com/todos/1')
+	fetch('https://api.coinbase.com/v2/prices/BTC-USD/spot')
       .then(response => response.json())
       .then(json => console.log(json))
 
