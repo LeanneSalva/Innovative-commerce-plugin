@@ -99,7 +99,7 @@ class Innovative_Commerce_Public {
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/innovative-commerce-public.js', array( 'jquery' ), $this->version, false );
 
 	}
-defined('ABSPATH')  || die('Unauthorized Access');
+function('ABSPATH')  || die('Unauthorized Access');
 
 // Action when user logs into admin panel
 add_shortcode('external_data', 'callback_function_name');
@@ -139,7 +139,7 @@ function callback_function_name( $atts ) {
 		<table>
 			<tr>
 				<td>1 Bitcoin price (USD): $ 24,432.67 USD/BTC</td>
-				
+
 			</tr>';
     
     foreach( $results as $result ) {
