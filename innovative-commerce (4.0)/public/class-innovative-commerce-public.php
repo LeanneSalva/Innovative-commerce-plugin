@@ -138,20 +138,13 @@ function callback_function_name( $atts ) {
     $html = '<h2>' . $atts['title'] . '</h2>
 		<table>
 			<tr>
-				<td>id</td>
-				<td>Name</td>
-				<td>Username</td>
-				<td>Email</td>
-				<td>Address</td>
+				<td>1 Bitcoin price (USD): $ 24,432.67 USD/BTC</td>
+				
 			</tr>';
     
     foreach( $results as $result ) {
 		$html .= '<tr>' ;
-		$html .= '<td>'  .  $result->id . '</td>' ;
-		$html .= '<td>'  .  $result->name . '</td>' ;
-		$html .= '<td>'  .  $result->username . '</td>' ;
-		$html .= '<td>'  .  $result->email . '</td>' ;
-		$html .= '<td>'  .  $result->address->street  .  ', ' . $result ->address->suite .  ', '  .  $result->address->city .  ', ' . $result->address->zipcode . '</td>';
+		$html .= '<td>'  .  $result->1 Bitcoin price (USD): $ 24,432.67 USD/BTC. '</td>' ;
 		$html .= '</ tr>' ;
     }
 
