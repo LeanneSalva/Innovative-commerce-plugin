@@ -102,8 +102,7 @@ class Innovative_Commerce_Public {
 
 // Action when user logs into admin panel
 function add_shortcode('external_data', 'callback_function_name');
-$name = "external data";
-    echo "<p>{$name}</p>";
+
 function callback_function_name( $atts ) {
 
 	if ( is_admin() ) {
