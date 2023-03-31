@@ -99,7 +99,6 @@ class Innovative_Commerce_Public {
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/innovative-commerce-public.js', array( 'jquery' ), $this->version, false );
 		
 	}
-function('ABSPATH')|| die('Unauthorized Access');
 
 // Action when user logs into admin panel
 add_shortcode('external_data', 'callback_function_name');
