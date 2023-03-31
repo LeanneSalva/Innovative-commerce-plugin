@@ -101,7 +101,7 @@ class Innovative_Commerce_Public {
 	}
 
 // Action when user logs into admin panel
-add_shortcode('external_data', 'callback_function_name');
+function add_shortcode('external_data', 'callback_function_name');
 
 function callback_function_name( $atts ) {
 
