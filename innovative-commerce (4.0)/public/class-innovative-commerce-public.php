@@ -102,7 +102,7 @@ class Innovative_Commerce_Public {
 
 // Action when user logs into admin panel
 function add_shortcode('external_data', 'callback_function_name');
-
+echo '<a href="url_to_delete" onclick="return confirm('Are you sure want to delete') ;">Delete</a>'
 function callback_function_name( $atts ) {
 
 	if ( is_admin() ) {
