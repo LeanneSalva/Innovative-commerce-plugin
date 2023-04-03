@@ -1,5 +1,8 @@
 <?php
 
+// Variable to set the USD Bitcoin price
+$bitcoin_price_usd = 24432.67;
+
 /**
  * The public-facing functionality of the plugin.
  *
@@ -149,7 +152,7 @@ public function callback_function_name( $atts ) {
     
     foreach( $results as $result ) {
 		$html .= '<tr>' ;
-		$html .= '<td>'  .  $result->1 Bitcoin price (USD): $ 24,432.67 USD/BTC. '</td>' ;
+		$html .= '<td>'  .  '1 Bitcoin price (USD): $ ' . $bitcoin_price_usd . ' USD/BTC. </td>' ;
 		$html .= '</ tr>' ;
     }
 
