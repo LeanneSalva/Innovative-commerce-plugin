@@ -103,15 +103,10 @@ class Innovative_Commerce_Public {
 		
 	}
 
+	// Action when user logs into admin panel
 	public function add_shortcode() {
 		add_shortcode('external_data', array($this, 'callback_function_name'));
 	}
-
-	
-// Action when user logs into admin panel
-public function add_shortcode() {
-    add_shortcode('external_data', array($this, 'callback_function_name'));
-}
 
 public function callback_function_name( $atts ) {
 	if ( is_admin() ) {
