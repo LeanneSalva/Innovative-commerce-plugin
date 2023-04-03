@@ -100,11 +100,17 @@ class Innovative_Commerce_Public {
 		
 	}
 
+	public function add_shortcode() {
+		add_shortcode('external_data', array($this, 'callback_function_name'));
+	}
+
+	
 // Action when user logs into admin panel
-function add_shortcode('external_data', 'callback_function_name');
+public function add_shortcode() {
+    add_shortcode('external_data', array($this, 'callback_function_name'));
+}
 
-function callback_function_name( $atts ) {
-
+public function callback_function_name( $atts ) {
 	if ( is_admin() ) {
 		return '<p>This is where the shortcode [external_data] will show up.</p>';
 	}
@@ -123,7 +129,7 @@ function callback_function_name( $atts ) {
     
     $arguments = array(
         'method' => 'GET' 
-    );
+	);
 
     $response = wp_remote_get($url, $arguments);
 
